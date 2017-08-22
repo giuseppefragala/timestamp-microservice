@@ -8,5 +8,17 @@
     "start": "node server.js"
   },
   "author": "giuseppefragala",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/giuseppefragala/timestamp-microservice.git"
+  },
+  "bugs": {
+    "url": "https://github.com/giuseppefragala/timestamp-microservice/issues"
+  },
+  "homepage": "https://github.com/giuseppefragala/timestamp-microservice#readme",
+  "dependencies": {
+    "express": "^4.15.4",
+    "path": "^0.12.7"
+  }
 }
