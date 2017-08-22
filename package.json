@@ -1,7 +1,7 @@
 {
   "name": "timestamp-microservice",
   "version": "1.0.0",
-  "description": "freeCOdeCamp\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[\u001b[3~\u001b[3~\u001b[3~\u001b[3~\u001b[3~FCC Api project 01",
+  "description": "FCC Api project 01",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
