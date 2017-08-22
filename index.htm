@@ -1,29 +1,32 @@
-<!doctype html>
+<html>
 <html lang="en">
     <head>
-        <title>Timestamp microservice</title>
+        <title>Timestamp Microservice</title>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
     </head>
-    <body>
-        <div class="container">
-            <h1 class="header">
-                API Basejump: Timestamp microservice
-            </h1>
-            <blockquote>
-                User stories:
+    <body style="background-color:#cc3344">
+        <div class="container jumbotron" style="background-color: #def966">
+            <h2 class="header text-center">
+                Free Code Camp API Project
+            </h2>
+            <h2 class="header text-center">
+                Timestamp Microservice
+            </h2>
+            <div>
+              <h2>User stories:</h2>
                 <ul>1) I can pass a string as a parameter, and it will check to see whether that string 
                 contains either a unix timestamp or a natural language date (example: January 1, 2016)</ul>
                 <ul>2) If it does, it returns both the Unix timestamp and the natural language form of that date.</ul>
                 <ul>3) If it does not contain a date or Unix timestamp, it returns null for those properties.</ul>
-            </blockquote>
+            </div>
             <h3>Example usage:</h3>
-            <code>https://timestamp-ms.herokuapp.com/December%2015,%202015</code><br>
-            <code>https://timestamp-ms.herokuapp.com/1450137600</code>
+            <code><a href="https://timestamp-microservice-x.herokuapp.com/August%2023,%202017">https://timestamp-microservice-x.herokuapp.com/August%2023,%202017</a></code><br>
+          <code><a href="">https://timestamp-microservice-x.herokuapp.com/1503442480</a></code>
             <h3>Example output:</h3>
             <code>
                 {
-                  "unix": 1450137600,
-                  "natural": "December 15, 2015"
+                  "unix": 1503442480,
+                  "natural": "August 23, 2017"
                 }
             </code>
         </div>
