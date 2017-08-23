@@ -18,7 +18,10 @@
   },
   "homepage": "https://github.com/giuseppefragala/timestamp-microservice#readme",
   "dependencies": {
+    "body-parser": "^1.17.2",
     "express": "^4.15.4",
+    "jade": "^1.11.0",
+    "moment": "^2.18.1",
     "path": "^0.12.7"
   }
 }
