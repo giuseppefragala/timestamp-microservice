@@ -38,7 +38,7 @@ app.get('/:id', function(req, res) {
 		unix_output = "null"
 	};	
 
-	var output = '{"unix": ' + '"' + unix_output  +'"' + ', "natural": ' + '"' + natural_output + '"}';
+	var output = '{ "unix": ' + unix_output + ', "natural": ' + '"' + natural_output + '" }';
   	res.render('index', { title: 'OUTPUT', head: "OUTPUT", message: output });
 
     //res.send(output);
