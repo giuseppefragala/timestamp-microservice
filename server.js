@@ -39,7 +39,7 @@ app.get('/:id', function(req, res) {
 	};	
 
 	var output = '{"unix": ' + '"' + unix_output  +'"' + ', "natural": ' + '"' + natural_output + '"}';
-  	res.render('index', { title: 'JSON Output', head: "JSON Output", message: output });
+  	res.render('index', { title: 'OUTPUT', head: "JSON Output", message: output });
 
     //res.send(output);
 });
