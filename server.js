@@ -39,7 +39,9 @@ app.get('/:id', function(req, res) {
 	};	
 
 	var output = '{ "unix": ' + unix_output + ', "natural": ' + '"' + natural_output + '" }';
+	console.log("output prima:" + output);
 	output = prettyJSON(output);
+	console.log("output dopo:" + output);
   	res.render('index', { title: 'OUTPUT', head: "OUTPUT", message: output });
 
     //res.send(output);
