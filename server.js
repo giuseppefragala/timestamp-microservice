@@ -39,6 +39,7 @@ app.get('/:id', function(req, res) {
 	};	
 
 	var output = '{ "unix": ' + unix_output + ', "natural": ' + '"' + natural_output + '" }';
+	output = prettyJSON(output);
   	res.render('index', { title: 'OUTPUT', head: "OUTPUT", message: output });
 
     //res.send(output);
@@ -58,3 +59,7 @@ app.post('/', function (req, res) {
 
 app.listen(process.env.PORT || 3000)
 console.log("Server is listening you!");
+
+function prettyJSON(data) {
+    return JSON.stringify(data, null, "    ");
+}
