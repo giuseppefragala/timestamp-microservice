@@ -3,6 +3,7 @@ var app = express();
 var path = require('path');
 var moment = require('moment');
 var jade = require('jade');
+var prettyjson = require("prettyjson");
 
 var bodyParser = require('body-parser')
 
@@ -63,5 +64,5 @@ app.listen(process.env.PORT || 3000)
 console.log("Server is listening you!");
 
 function prettyJSON(data) {
-    return JSON.stringify(data, null, "-z-");
+    return prettyjson.render(data);
 }
