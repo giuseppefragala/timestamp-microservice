@@ -3,8 +3,6 @@ var app = express();
 var path = require('path');
 var moment = require('moment');
 var jade = require('jade');
-var prettyjson = require("prettyjson");
-
 var bodyParser = require('body-parser')
 
 app.set('views', __dirname + '/');
@@ -40,9 +38,6 @@ app.get('/:id', function(req, res) {
 	};	
 
 	var output = '{ "unix": ' + unix_output + ', "natural": ' + '"' + natural_output + '" }';
-	console.log("output prima:" + output);
-	output = prettyJSON(output);
-	console.log("output dopo:" + output);
   	res.render('index', { title: 'OUTPUT', head: "OUTPUT", message: output });
 
     //res.send(output);
@@ -63,11 +58,3 @@ app.post('/', function (req, res) {
 app.listen(process.env.PORT || 3000)
 console.log("Server is listening you!");
 
-function prettyJSON(data) {
-    return prettyjson.render(data, 
-    {
-	  keysColor: 'rainbow',
-	  dashColor: 'magenta',
-	  stringColor: 'white'
-	});
-}
