@@ -64,5 +64,10 @@ app.listen(process.env.PORT || 3000)
 console.log("Server is listening you!");
 
 function prettyJSON(data) {
-    return prettyjson.render(data);
+    return prettyjson.render(data, 
+    {
+	  keysColor: 'rainbow',
+	  dashColor: 'magenta',
+	  stringColor: 'white'
+	});
 }
