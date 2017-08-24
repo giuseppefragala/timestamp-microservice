@@ -63,5 +63,5 @@ app.listen(process.env.PORT || 3000)
 console.log("Server is listening you!");
 
 function prettyJSON(data) {
-    return JSON.stringify(data, null, "    ");
+    return JSON.stringify(data, null, "-z-");
 }
