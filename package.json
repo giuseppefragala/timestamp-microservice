@@ -21,7 +21,7 @@
     "body-parser": "^1.17.2",
     "express": "^4.15.4",
     "jade": "^1.11.0",
-    "moment": "^2.18.1",
+    "moment": "^2.29.2",
     "path": "^0.12.7",
     "prettyjson": "^1.2.1"
   }
